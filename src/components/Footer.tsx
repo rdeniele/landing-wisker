@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-const logoUrl = "https://cdn-icons-png.flaticon.com/512/616/616408.png";
 
 export default function Footer() {
         return (
@@ -28,7 +27,7 @@ export default function Footer() {
                     <div style={{ maxWidth: 220 }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                             <Image
-                                src={logoUrl}
+                                src="/Wisker.png"
                                 alt="Wisker Logo"
                                 width={32}
                                 height={32}
@@ -39,11 +38,11 @@ export default function Footer() {
                                 }}
                                 priority
                             />
-                            <span style={{ fontWeight: 600, fontSize: "1.2rem", color: "#fff" }}>
+                            <span style={{ fontWeight: 900, fontSize: "2.5rem", color: "#fff", lineHeight: 1.1 }}>
                                 Wisker
                             </span>
                         </div>
-                        <p style={{ marginTop: 16, color: "#e0e0e0", fontSize: "0.98rem" }}>
+                        <p style={{ marginTop: 16, color: "#e0e0e0", fontSize: "1.25rem", lineHeight: 1.6 }}>
                             Making studying fun and effective with AI-powered learning tools.
                         </p>
                     </div>
