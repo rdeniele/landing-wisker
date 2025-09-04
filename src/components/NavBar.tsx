@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-const logoUrl = "https://cdn-icons-png.flaticon.com/512/616/616408.png"; // Example free icon
+const logoUrl = "/Wisker.png"; // Local logo in public directory
 
 export default function NavBar() {
   return (
@@ -18,15 +18,15 @@ export default function NavBar() {
     >
       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
         <Image
-          src={logoUrl}
-          alt="Wisker Logo"
-          width={32}
-          height={32}
-          style={{
-            borderRadius: "8px",
-            border: "2px solid #b3d1ff",
-            background: "#f5faff",
-          }}
+            src={logoUrl}
+            alt="Wisker Logo"
+            width={40}
+            height={40}
+            style={{
+              borderRadius: "8px",
+              border: "2px solid #b3d1ff",
+              background: "#f5faff",
+            }}
         />
         <span style={{ fontWeight: 500, fontSize: "1.2rem", color: "#444" }}>
           Wisker
