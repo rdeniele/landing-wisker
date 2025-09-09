@@ -75,10 +75,10 @@ function Hero() {
             <Image
               src="/wisker_mockup.png"
               alt="Wisker mobile app streak calendar mockup"
-              width={800}
-              height={800}
-              className={`w-full h-full max-h-[400px] lg:max-h-[600px] object-cover rounded-2xl ${styles["multicolor-shadow"]}`}
-              style={{ minHeight: "300px", background: 'transparent', border: 'none', margin: 0, padding: 0 }}
+              width={400}
+              height={400}
+              className={`w-full h-full max-h-[200px] lg:max-h-[300px] object-cover rounded-2xl ${styles["multicolor-shadow"]}`}
+              style={{ minHeight: "150px", background: 'transparent', border: 'none', margin: 0, padding: 0 }}
             />
           </div>
       </div>
