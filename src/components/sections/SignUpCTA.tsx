@@ -10,7 +10,7 @@ export default function SignUpCTA() {
 						Ready to Transform<br />Your Study Game?
 					</h1>
 					<p style={{ color: "#444", fontSize: "1.25rem", marginBottom: 36, lineHeight: 1.6 }}>
-						Join thousands of students who are already studying smarter with Wisker. Start your free trial today and see the difference AI can make! 🚀
+						Join thousands of students who are already studying smarter with Wisker. Start your free trial today and see the difference AI can make!
 					</p>
 				   <div style={{ display: "flex", gap: "18px", justifyContent: "center", marginBottom: 28 }}>
 					   <a

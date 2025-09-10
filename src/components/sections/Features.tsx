@@ -50,7 +50,7 @@ const features = [
 
 export default function Features() {
 	return (
-		<section className="w-full bg-gray-50 py-16">
+		<section className="w-full bg-gray-50 py-16" id="features">
 			<div className="max-w-5xl mx-auto px-4">
 				<h1 className="font-extrabold text-5xl md:text-6xl text-gray-700 text-center mb-8 drop-shadow-[2px_2px_0_#a3cfff,4px_4px_0_#d8c8f5] tracking-tight leading-tight">
 					Everything You Need to<br />Ace Your Exams

@@ -8,7 +8,7 @@ import { MdTrendingUp } from "react-icons/md";
 function Hero() {
   return (
   <section style={{ width: '100%', background: '#f3f3f3', borderRadius: '2rem', margin: '0 auto', padding: '64px 0' }}>
-      <div className="w-full flex flex-col lg:flex-row items-start justify-between mt-20 px-4 sm:px-6 lg:px-8 mb-20 gap-8">
+      <div className="w-full flex flex-col lg:flex-row items-start justify-between mt-20 px-4 sm:px-6 lg:px-8 mb-20 gap-8" id='hero'>
         {/* Left Column */}
         <div className="flex-1 flex flex-col items-start justify-start text-left">
           <h1
