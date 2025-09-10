@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-  <section className="w-full rounded-3xl mx-auto py-12 sm:py-16 px-2 sm:px-6 lg:px-8">
+    <section className="w-full rounded-3xl mx-auto py-12 sm:py-16 px-2 sm:px-6 lg:px-8">
       <div className="w-full flex flex-col lg:flex-row items-start justify-between mt-10 sm:mt-20 mb-10 sm:mb-20 gap-8" id="hero">
         {/* Left Column */}
         <div className="flex-1 flex flex-col items-start justify-start text-left">

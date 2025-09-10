@@ -1,9 +1,9 @@
 
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabaseClient";
-
+import { useAuth } from "@/lib/AuthContext";
 import Image from "next/image";
 
 export default function SignIn() {
@@ -13,16 +13,19 @@ export default function SignIn() {
 	const [error, setError] = useState("");
 	const router = useRouter();
 
-	const handleSignIn = async (e: React.FormEvent) => {
-		e.preventDefault();
-		setError("");
-		const { error } = await supabase.auth.signInWithPassword({ email, password });
-		if (error) {
-			setError(error.message);
-		} else {
-			router.push("/authenticated/coming-soon");
-		}
-	};
+
+		const { login } = useAuth();
+
+		const handleSignIn = async (e: React.FormEvent) => {
+			e.preventDefault();
+			setError("");
+			const success = await login(email, password);
+			if (success) {
+				router.push("/authenticated/coming-soon");
+			} else {
+				setError("Invalid email or password.");
+			}
+		};
 
 			return (
 					<main style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'linear-gradient(135deg, #e6f0ff 0%, #f5faff 100%)'}}>
@@ -89,23 +92,31 @@ export default function SignIn() {
 												{passwordTouched && !password && (
 													<span style={{color: '#e53e3e', fontSize: '0.95rem', fontWeight: 'bold', marginTop: '-1rem', alignSelf: 'flex-start'}}>Password is required.</span>
 												)}
-												<button type="submit" style={{
-													padding: '1rem',
-													fontSize: '1.05rem',
-													fontWeight: 'bold',
-													background: 'linear-gradient(90deg, #b3d1ff 60%, #8bb6f7 100%)',
-													color: '#2a4365',
-													borderRadius: '0.75rem',
-													border: 'none',
-													boxShadow: '0 2px 8px #b3d1ff33',
-													cursor: 'pointer',
-													transition: 'background 0.2s',
-													marginTop: '0.5rem',
-													width: '100%',
-												}}>
-													Sign In
-												</button>
-						{error && <p style={{color: '#e53e3e', fontWeight: 'bold', marginTop: '0.5rem'}}>{error}</p>}
+															<button type="submit" style={{
+																padding: '1rem',
+																fontSize: '1.05rem',
+																fontWeight: 'bold',
+																background: 'linear-gradient(90deg, #b3d1ff 60%, #8bb6f7 100%)',
+																color: '#2a4365',
+																borderRadius: '0.75rem',
+																border: 'none',
+																boxShadow: '0 2px 8px #b3d1ff33',
+																cursor: 'pointer',
+																transition: 'background 0.2s',
+																marginTop: '0.5rem',
+																width: '100%',
+															}}>
+																Sign In
+															</button>
+															<div style={{ marginTop: '1rem', textAlign: 'center', width: '100%' }}>
+																<span style={{ color: '#2a4365', fontSize: '1rem' }}>
+																	Don&apos;t have an account?{' '}
+																	<a href="/auth/SignUp" style={{ color: '#4a90e2', textDecoration: 'underline', fontWeight: 'bold' }}>
+																		Sign up
+																	</a>
+																</span>
+															</div>
+															{error && <p style={{color: '#e53e3e', fontWeight: 'bold', marginTop: '0.5rem'}}>{error}</p>}
 					</form>
 				</main>
 			);
