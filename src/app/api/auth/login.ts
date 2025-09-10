@@ -5,6 +5,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  console.log('LOGIN req.body:', req.body);
   const { email, password } = req.body;
 
   // Demo: Accept any non-empty email/password
