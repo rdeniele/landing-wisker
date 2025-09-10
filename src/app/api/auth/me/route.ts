@@ -1,6 +1,5 @@
-import { NextRequest } from 'next/server';
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   // Demo: Always return not authenticated
   // In production, check session/cookie/token
   return new Response(JSON.stringify({ isSignedIn: false }), {
