@@ -1,9 +1,11 @@
 import React from "react";
+import { FaHome, FaBookOpen, FaListAlt, FaBlog, FaEnvelope, FaFacebook, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default function Footer() {
-        return (
+    return (
+        <>
             <footer
                 style={{
                     background: "#6d6d6d",
@@ -47,30 +49,24 @@ export default function Footer() {
                         </p>
                     </div>
                     <div>
-                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Product</h4>
+                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Navigation</h4>
                         <ul style={{ listStyle: "none", padding: 0, margin: 0, color: "#e0e0e0" }}>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Features</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Pricing</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>API</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Integrations</a></li>
+                            <li>
+                                <Link href="/" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <FaHome />Home
+                                </Link>
+                            </li>
+                            <li><a href="#how-it-works" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaBookOpen />How It Works</a></li>
+                            <li><a href="#features" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaListAlt />Features</a></li>
+                            <li><a href="#blogs" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaBlog />Blogs</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Company</h4>
+                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Contact</h4>
                         <ul style={{ listStyle: "none", padding: 0, margin: 0, color: "#e0e0e0" }}>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>About</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Blog</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Careers</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Support</h4>
-                        <ul style={{ listStyle: "none", padding: 0, margin: 0, color: "#e0e0e0" }}>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Help Center</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Community</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Privacy</a></li>
-                            <li><a href="#" style={{ color: "#e0e0e0", textDecoration: "none" }}>Terms</a></li>
+                            <li><a href="mailto:info@wisker.app" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaEnvelope />info@wisker.app</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61577887210771" target="_blank" rel="noopener noreferrer" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaFacebook />Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/company/wisker/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaLinkedin />LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,5 +75,6 @@ export default function Footer() {
                     © 2025 Wisker. All rights reserved. Made with <span style={{ color: "#ff5a7a", fontSize: "1.1em" }}>♥</span> for students everywhere.
                 </div>
             </footer>
-        );
+        </>
+    );
 }

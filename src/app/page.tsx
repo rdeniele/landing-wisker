@@ -8,12 +8,12 @@ import Blogs from "@/components/sections/Blogs";
 
 export default function Home() {
   return (
-    <>
-  <Hero />
-  <Features />
-  <HowItWorks />
-  <Blogs />
-  <SignUpCTA />
-    </>
+    <main className="min-h-screen flex flex-col gap-8 px-4 py-8 sm:px-8 md:px-16 lg:px-24">
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Blogs />
+      <SignUpCTA />
+    </main>
   );
 }

@@ -54,20 +54,12 @@ const Blogs = () => {
 								className="font-bold text-[#4a90e2] hover:underline hover:text-[#171717] transition-colors duration-150"
 							>
 								Read Full Blog
-							</a>
-						</div>
-					))}
-				</div>
-				<div className="flex justify-center mt-12">
-					<a
-						href="/blog"
-						className="px-6 py-3 rounded-xl font-bold text-lg border-2 border-[#4a90e2] bg-[#4a90e2] text-white hover:bg-[#b3d1ff] hover:text-[#171717] transition-colors duration-150 shadow-md"
-					>
-						Visit All Blogs
-					</a>
-				</div>
-			</section>
-	);
-};
-
-export default Blogs;
+														</a>
+													</div>
+												))}
+											</div>
+										</section>
+								);
+							};
+							
+							export default Blogs;
