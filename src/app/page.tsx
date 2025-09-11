@@ -5,7 +5,7 @@ import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
 import SignUpCTA from "@/components/sections/SignUpCTA";
 import Blogs from "@/components/sections/Blogs";
-import CommunitySection from "@/components/CommunitySection";
+import CommunitySection from "@/components/sections/CommunitySection";
 
 export default function Home() {
   return (

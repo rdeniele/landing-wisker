@@ -67,7 +67,7 @@ export default function Features() {
 					{features.map((feature) => (
 						<div
 							key={feature.title}
-							className={`transition-transform duration-150 cursor-pointer flex flex-col items-center bg-white rounded-2xl border-2 shadow-sm px-3 sm:px-4 py-5 sm:py-6 gap-2 sm:gap-3 ${feature.comingSoon ? 'opacity-60' : ''}`}
+							className={`transition-transform duration-150 cursor-pointer flex flex-col items-center bg-white rounded-2xl border-4 shadow-sm px-3 sm:px-4 py-5 sm:py-6 gap-2 sm:gap-3 ${feature.comingSoon ? 'opacity-60' : ''}`}
 							style={{ background: feature.color, borderColor: feature.border, boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}
 							onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.03)")}
 							onMouseLeave={e => (e.currentTarget.style.transform = "")}
