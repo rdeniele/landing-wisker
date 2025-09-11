@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaHome, FaBookOpen, FaListAlt, FaBlog, FaEnvelope, FaFacebook, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
@@ -5,76 +6,50 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <>
-            <footer
-                style={{
-                    background: "#6d6d6d",
-                    color: "#fff",
-                    padding: "32px 0 0 0",
-                    fontFamily: "inherit",
-                    fontSize: "1rem",
-                }}
-            >
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "flex-start",
-                        gap: "64px",
-                        maxWidth: "900px",
-                        margin: "0 auto",
-                        padding: "0 24px",
-                    }}
-                >
-                    <div style={{ maxWidth: 220 }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                            <Image
-                                src="/Wisker.png"
-                                alt="Wisker Logo"
-                                width={32}
-                                height={32}
-                                style={{
-                                    borderRadius: "8px",
-                                    border: "2px solid #b3d1ff",
-                                    background: "#f5faff",
-                                }}
-                                priority
-                            />
-                            <span style={{ fontWeight: 900, fontSize: "2.5rem", color: "#fff", lineHeight: 1.1 }}>
-                                Wisker
-                            </span>
-                        </div>
-                        <p style={{ marginTop: 16, color: "#e0e0e0", fontSize: "1.25rem", lineHeight: 1.6 }}>
-                            Making studying fun and effective with AI-powered learning tools.
-                        </p>
+        <footer className="bg-neutral-700 text-white pt-8 font-sans text-base w-full">
+            <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row md:items-start md:justify-center gap-8 md:gap-16">
+                <div className="max-w-xs flex flex-col items-start">
+                    <div className="flex items-center gap-2">
+                        <Image
+                            src="/Wisker.png"
+                            alt="Wisker Logo"
+                            width={32}
+                            height={32}
+                            className="rounded-lg border-2 border-[#b3d1ff] bg-[#f5faff]"
+                            priority
+                        />
+                        <span className="font-extrabold text-3xl text-white leading-tight">Wisker</span>
                     </div>
+                    <p className="mt-4 text-gray-200 text-lg leading-relaxed">
+                        Making studying fun and effective with AI-powered learning tools.
+                    </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-8 w-full">
                     <div>
-                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Navigation</h4>
-                        <ul style={{ listStyle: "none", padding: 0, margin: 0, color: "#e0e0e0" }}>
+                        <h4 className="font-semibold mb-3 text-white">Navigation</h4>
+                        <ul className="list-none p-0 m-0 text-gray-200">
                             <li>
-                                <Link href="/" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
-                                    <FaHome />Home
-                                </Link>
+                                <Link href="/" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaHome />Home</Link>
                             </li>
-                            <li><a href="#how-it-works" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaBookOpen />How It Works</a></li>
-                            <li><a href="#features" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaListAlt />Features</a></li>
-                            <li><a href="#blogs" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaBlog />Blogs</a></li>
+                            <li><a href="#how-it-works" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaBookOpen />How It Works</a></li>
+                            <li><a href="#features" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaListAlt />Features</a></li>
+                            <li><a href="#blogs" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaBlog />Blogs</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style={{ fontWeight: 600, marginBottom: 12, color: "#fff" }}>Contact</h4>
-                        <ul style={{ listStyle: "none", padding: 0, margin: 0, color: "#e0e0e0" }}>
-                            <li><a href="mailto:info@wisker.app" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaEnvelope />info@wisker.app</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=61577887210771" target="_blank" rel="noopener noreferrer" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaFacebook />Facebook</a></li>
-                            <li><a href="https://www.linkedin.com/company/wisker/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style={{ color: "#e0e0e0", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}><FaLinkedin />LinkedIn</a></li>
+                        <h4 className="font-semibold mb-3 text-white">Contact</h4>
+                        <ul className="list-none p-0 m-0 text-gray-200">
+                            <li><a href="mailto:info@wisker.app" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaEnvelope />info@wisker.app</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61577887210771" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaFacebook />Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/company/wisker/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#b3d1ff] transition-colors"><FaLinkedin />LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
-                <hr style={{ border: "none", borderTop: "1px solid #888", margin: "32px 0 0 0" }} />
-                <div style={{ textAlign: "center", padding: "18px 0 24px 0", color: "#e0e0e0", fontSize: "0.98rem" }}>
-                    © 2025 Wisker. All rights reserved. Made with <span style={{ color: "#ff5a7a", fontSize: "1.1em" }}>♥</span> for students everywhere.
-                </div>
-            </footer>
-        </>
+            </div>
+            <hr className="border-t border-gray-500 my-8" />
+            <div className="text-center py-4 text-gray-200 text-sm">
+                © 2025 Wisker. All rights reserved. Made with <span className="text-pink-400 text-lg">♥</span> for students everywhere.
+            </div>
+        </footer>
     );
 }
