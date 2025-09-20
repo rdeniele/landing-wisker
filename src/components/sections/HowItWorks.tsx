@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="w-full bg-gray-100 py-10 sm:py-16" id="how-it-works">
+  <section className="w-full bg-[#f5faff] rounded-3xl py-10 sm:py-16" id="how-it-works">
       <div className="max-w-[1200px] mx-auto px-2 sm:px-6">
         <h2 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-700 text-center mb-8 sm:mb-12 drop-shadow-[2px_2px_0_#a3cfff,4px_4px_0_#d8c8f5] tracking-tight leading-tight">
           How Wisker<br />Works Magic

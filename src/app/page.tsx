@@ -6,6 +6,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import SignUpCTA from "@/components/sections/SignUpCTA";
 import Blogs from "@/components/sections/Blogs";
 import CommunitySection from "@/components/sections/CommunitySection";
+import Pricing from "@/components/sections/Pricing";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CommunitySection />
       <Features />
       <HowItWorks />
+      <Pricing/>
       <Blogs />
       <SignUpCTA />
     </main>
