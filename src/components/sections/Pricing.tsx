@@ -75,7 +75,7 @@ const Pricing = () => {
 
   return (
   <section className="w-full flex flex-col items-center py-12 px-2 sm:px-4 rounded-3xl">
-      <h2 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-700 text-center mb-8 sm:mb-12 drop-shadow-[2px_2px_0_#a3cfff,4px_4px_0_#d8c8f5] tracking-tight leading-tight">
+      <h2 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-700 text-center mb-8 sm:mb-12 drop-shadow-[2px_2px_0_#a3cfff,4px_4px_0_#d8c8f5] tracking-tight leading-tight" id="pricing">
         Choose Your<br className="hidden sm:block" />Cat-egory
       </h2>
       {/* Tab Switcher */}

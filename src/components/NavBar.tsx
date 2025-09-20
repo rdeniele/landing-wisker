@@ -45,6 +45,7 @@ export default function NavBar() {
           <a href="#how-it-works" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">How It Works</a>
           <a href="#features" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Features</a>
           <a href="#blogs" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Blogs</a>
+          <a href="#pricing" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Pricing</a>
           {!isSignedIn ? (
             <>
               <a
@@ -77,6 +78,7 @@ export default function NavBar() {
           <a href="#how-it-works" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">How It Works</a>
           <a href="#features" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Features</a>
           <a href="#blogs" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Blogs</a>
+          <a href="#pricing" className="text-gray-700 font-bold text-base px-2 py-1 hover:text-[#4a90e2] transition-colors">Pricing</a>
           {!isSignedIn ? (
             <>
               <a
