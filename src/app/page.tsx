@@ -4,7 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
 import SignUpCTA from "@/components/sections/SignUpCTA";
-import Blogs from "@/components/sections/Blogs";
+// import Blogs from "@/components/sections/Blogs";
 import CommunitySection from "@/components/sections/CommunitySection";
 import Pricing from "@/components/sections/Pricing";
 
@@ -16,7 +16,7 @@ export default function Home() {
       <Features />
       <HowItWorks />
       <Pricing/>
-      <Blogs />
+      {/* <Blogs /> */}
       <SignUpCTA />
     </main>
   );
